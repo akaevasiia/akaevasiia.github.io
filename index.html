@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Асия Акаева — операционное управление и юридическая экспертиза</title>
+<meta content="Асия Акаева. Операционное управление, юридическое сопровождение бизнеса, финансовые процессы и проектный менеджмент. 14+ лет опыта." name="description"/>
+<meta content="#f5f1ea" name="theme-color"/>
+<meta content="Асия Акаева — Operations &amp; Legal" property="og:title"/>
+<meta content="Системность, право и управление в сложных задачах бизнеса" property="og:description"/>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700&family=Prata&display=swap');
+:root {
+  --paper:#f5f1ea; --paper-2:#ede6db; --ivory:#fffdf8; --ink:#2d2a26;
+  --dark:#33382f; --light-ink:#d6d7cb; --muted:#7b776e;
+  --line:rgba(50,46,39,.18); --accent:#a8765d; --accent-light:#e5d4c4;
+  --serif:"Prata",Georgia,"Times New Roman",serif;
+  --sans:"Onest","Helvetica Neue",Arial,sans-serif;
+}
+* { box-sizing:border-box; }
+html {scroll-behavior:smooth;scroll-padding-top:94px;}
+body {margin:0;color:var(--ink);background:var(--paper);font-family:var(--sans);font-size:16px;line-height:1.62;-webkit-font-smoothing:antialiased;}
+::selection{background:#cbb7a3;color:#201a15}
+a{color:inherit;text-decoration:none}
+button,a{ -webkit-tap-highlight-color:transparent;}
+a:focus-visible, summary:focus-visible{outline:2px solid var(--accent);outline-offset:5px}
+img{max-width:100%;display:block}
+.container{width:min(1340px, calc(100% - 104px));margin-inline:auto}
+.eyebrow{margin:0;font-size:11px;letter-spacing:.21em;text-transform:uppercase;font-weight:600}
+.caps{font-size:12px;letter-spacing:.15em;text-transform:uppercase;font-weight:600}
+.serif{font-family:var(--serif);font-weight:400;line-height:1.15;letter-spacing:-.035em}
+.muted{color:var(--muted)}
+.rule{border-top:1px solid var(--line)}
+.skip{position:absolute;left:-999px;top:4px;background:white;padding:10px 18px;z-index:100}
+.skip:focus{left:20px}
+header{position:sticky;top:0;z-index:20;background:rgba(245,241,234,.95);border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}
+.header-inner{height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{font-size:16px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;white-space:nowrap}
+.site-nav{display:flex;gap:clamp(21px,3vw,47px);align-items:center}
+.site-nav a{font-size:12px;letter-spacing:.13em;text-transform:uppercase;font-weight:600;position:relative;padding:5px 0}
+.site-nav a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--ink);transition:width .25s}
+.site-nav a:hover::after{width:100%}
+.site-nav .nav-contact{border:1px solid var(--ink);padding:11px 18px;border-radius:30px}
+.site-nav .nav-contact::after{display:none}
+.mobile-nav{display:none}
+.hero{position:relative;padding-top:64px;padding-bottom:112px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(420px,.88fr);gap:clamp(45px,5vw,90px);align-items:end}
+.hero-left{padding-bottom:25px;position:relative;z-index:1}
+.hero-number{display:flex;align-items:center;gap:12px;color:var(--accent);margin-bottom:50px}
+.hero-number:after{content:"";height:1px;background:var(--accent);width:50px;opacity:.5}
+.hero-name{font-family:var(--serif);font-size:clamp(78px,9.4vw,158px);line-height:1.07;letter-spacing:-.075em;margin:0 0 32px}
+.hero-name .second{display:block;white-space:nowrap;margin-left:clamp(0px,2.2vw,34px)}
+.hero-lead{font-family:var(--serif);font-size:clamp(27px,3vw,44px);line-height:1.33;max-width:690px;letter-spacing:-.02em;margin:0 0 24px}
+.hero-lead i{color:var(--accent);font-style:normal}
+.hero-desc{color:#615a53;max-width:530px;font-size:16px;margin:0 0 30px;line-height:1.75}
+.hero-actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.button{font-size:12px;letter-spacing:.09em;text-transform:uppercase;font-weight:600;padding:17px 24px;display:inline-flex;align-items:center;justify-content:space-between;gap:24px;border:1px solid var(--ink);transition:transform .2s,background .2s,color .2s}
+.button:hover{transform:translateY(-2px)}
+.button.dark{background:var(--ink);color:var(--paper)}
+.button.dark:hover{background:#494238}
+.button.textual{border:none;padding-left:8px;padding-right:8px}
+.button .arr{font-size:19px;line-height:1}
+.hero-right{position:relative;padding:0 12px 30px 0}
+.hero-portrait{width:100%;height:clamp(520px,54vw,680px);object-fit:cover;object-position:50% center;filter:saturate(.83) contrast(.96)}
+.hero-media-stamp{position:absolute;right:-3px;bottom:0;background:var(--paper-2);padding:24px 28px 18px;font-family:var(--serif);font-size:19px;line-height:1.3}
+.hero-media-stamp span{display:block;font-family:var(--sans);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.tiny-vertical{position:absolute;right:-31px;top:0;writing-mode:vertical-rl;text-transform:uppercase;letter-spacing:.23em;font-size:10px;color:#8b8276}
+.intro{background:var(--paper-2);padding:102px 0 94px}
+.intro-grid{display:grid;grid-template-columns:.55fr 1.45fr;gap:8vw}
+.section-index{display:flex;align-items:flex-start;gap:14px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;padding-top:13px}
+.section-index span{color:var(--accent)}
+.intro h2{font-family:var(--serif);font-size:clamp(42px,5.15vw,76px);line-height:1.18;font-weight:400;letter-spacing:-.04em;margin:0 0 42px;max-width:910px}
+.intro p{font-size:18px;max-width:775px;color:#625b52;margin:0 0 22px}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;margin-top:65px;padding-top:27px;border-top:1px solid var(--line)}
+.metric-num{font-family:var(--serif);font-size:clamp(31px,4vw,53px);line-height:1.2;margin-bottom:9px}
+.metric-label{font-size:12px;color:#766b60;max-width:145px;line-height:1.5}
+.expertise{padding:113px 0 124px}
+.section-heading{display:grid;grid-template-columns:.55fr 1.45fr;gap:8vw;align-items:start;margin-bottom:54px}
+.section-heading h2{font-size:clamp(40px,5.3vw,74px);margin:0;font-family:var(--serif);font-weight:400;line-height:1.2;letter-spacing:-.04em}
+.service-grid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.service{padding:36px 42px 41px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);min-height:243px;position:relative;transition:background .3s}
+.service:hover{background:#efe8df}
+.service-no{color:var(--accent);font-size:11px;letter-spacing:.16em;font-weight:600}
+.service h3{font-family:var(--serif);font-weight:400;font-size:clamp(24px,2.5vw,37px);margin:31px 0 15px;line-height:1.27}
+.service p{color:#6c655b;font-size:14px;max-width:485px;margin:0}
+.folio{padding:0 0 106px}
+.folio-grid{display:grid;grid-template-columns:1.22fr .78fr;gap:24px}
+.folio-main{height:490px;width:100%;object-fit:cover}
+.folio-side{width:100%;height:490px;object-fit:cover}
+.caption-flex{margin-top:12px;display:flex;justify-content:space-between;color:#81776d;font-size:11px;text-transform:uppercase;letter-spacing:.11em}
+.experience{padding:113px 0 120px;background:var(--ivory)}
+.experience .section-heading{margin-bottom:36px}
+.timeline{border-top:1px solid var(--line)}
+.timeline-item{display:grid;grid-template-columns:.43fr .85fr 1.18fr;gap:34px;padding:34px 0 39px;border-bottom:1px solid var(--line)}
+.time-date{font-size:12px;color:#82776d;letter-spacing:.08em;padding-top:12px}
+.time-role h3{font-family:var(--serif);font-size:clamp(23px,2.2vw,34px);font-weight:400;line-height:1.3;margin:0 0 11px}
+.time-role p{color:var(--accent);font-size:13px;line-height:1.55;margin:0}
+.time-body p{font-size:14px;line-height:1.75;color:#615c55;margin:0 0 12px}
+.time-body strong{color:var(--ink);font-weight:600}
+.results{background:var(--dark);color:#f4f0e8;padding:116px 0 130px}
+.results .section-index{color:#cbd0c3}
+.results .section-index span{color:#e0ad90}
+.results h2{font-family:var(--serif);font-size:clamp(44px,6vw,84px);line-height:1.19;font-weight:400;letter-spacing:-.045em;margin:0}
+.results-heading{display:grid;grid-template-columns:.55fr 1.45fr;gap:8vw;margin-bottom:66px}
+.results-list{border-top:1px solid rgba(255,255,255,.26)}
+.result-item{display:grid;grid-template-columns:.33fr .95fr 1.25fr;gap:36px;align-items:baseline;padding:31px 0;border-bottom:1px solid rgba(255,255,255,.23)}
+.result-item span{color:#aeb5a7;font-size:12px;letter-spacing:.12em}
+.result-item h3{font-size:24px;line-height:1.3;font-weight:400;margin:0;font-family:var(--serif)}
+.result-item p{margin:0;color:#d2d5cb;font-size:14px;line-height:1.75}
+.results-note{margin:37px 0 0;color:#c6c8bd;font-size:12px}
+.collab{padding:108px 0 104px}
+.collab-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.collab-item{background:var(--paper-2);padding:45px 44px;min-height:244px;border-top:2px solid var(--accent)}
+.collab-item .num{font-size:11px;color:var(--accent);letter-spacing:.16em}
+.collab-item h3{font-family:var(--serif);font-size:34px;font-weight:400;margin:28px 0 10px}
+.collab-item p{color:#655e56;max-width:430px;font-size:14px;margin:0}
+.collab-bottom{border-top:1px solid var(--line);margin-top:38px;padding-top:25px;display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:13px;color:#7d736a}
+.collab-bottom a{font-size:13px;border-bottom:1px solid var(--ink);color:var(--ink)}
+.contact{display:grid;grid-template-columns:.82fr 1.18fr;min-height:580px;background:#e9e2d8}
+.contact-visual{position:relative;overflow:hidden}
+.contact-visual img{width:100%;height:100%;object-fit:cover;object-position:35% center;filter:saturate(.8)}
+.contact-text{padding:90px min(8vw,120px) 80px;align-self:center}
+.contact-text h2{font-family:var(--serif);font-weight:400;font-size:clamp(42px,5.2vw,76px);line-height:1.22;letter-spacing:-.04em;margin:31px 0 23px}
+.contact-text p{font-size:16px;color:#676056;max-width:520px;margin-bottom:33px}
+.social{display:flex;gap:11px;flex-wrap:wrap}
+.social a{padding:12px 19px;border:1px solid rgba(42,36,29,.36);font-size:13px;transition:background .2s,color .2s}
+.social a:hover{background:var(--ink);color:white}
+.footer{background:var(--ivory);padding:28px 0 30px}
+.footer .container{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.footer p{font-size:11px;text-transform:uppercase;letter-spacing:.11em;color:#867b71;margin:0}
+.footer a{font-size:11px;color:#867b71;text-transform:uppercase;letter-spacing:.11em}
+.reveal{animation:fadeIn .6s both}
+@keyframes fadeIn{from{opacity:.6;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media (max-width:1100px){
+ .hero-grid{grid-template-columns:minmax(0,1fr) minmax(360px,.85fr);gap:40px}
+ .hero-name{font-size:clamp(72px,8vw,105px)}
+ .hero-right{padding-bottom:22px}
+ .intro-grid,.section-heading,.results-heading{gap:4vw}
+}
+@media (max-width:780px){
+ .container{width:min(100% - 40px,640px)}
+ .header-inner{height:70px}
+ .site-nav{display:none}
+ .mobile-nav{display:block;position:relative}
+ .mobile-nav summary{cursor:pointer;list-style:none;font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+ .mobile-nav summary::-webkit-details-marker{display:none}
+ .mobile-nav .menu{position:absolute;right:0;top:39px;padding:20px 24px;background:var(--ivory);border:1px solid var(--line);min-width:210px;box-shadow:0 12px 30px #27221a18}
+ .mobile-nav .menu a{display:block;padding:8px 0;font-size:13px}
+ .hero{padding:34px 0 77px}
+ .hero-grid{display:flex;flex-direction:column;gap:39px;align-items:stretch}
+ .hero-left{padding:0}
+ .hero-number{margin:0 0 27px}
+ .hero-name{font-size:clamp(61px,12vw,90px);margin-bottom:22px}
+ .hero-name .second{margin-left:12px}
+ .hero-lead{font-size:clamp(27px,6vw,37px)}
+ .hero-right{width:min(100%,580px);margin:0 auto;padding-right:0}
+ .hero-portrait{height:510px}
+ .tiny-vertical{display:none}
+ .hero-media-stamp{right:0}
+ .intro,.expertise,.experience,.results,.collab{padding-top:73px;padding-bottom:74px}
+ .intro-grid,.section-heading,.results-heading{display:block}
+ .section-index{padding:0;margin-bottom:28px}
+ .intro h2,.section-heading h2,.results h2{font-size:clamp(37px,7vw,55px)}
+ .intro p{font-size:16px}
+ .metrics{grid-template-columns:1fr 1fr;row-gap:28px;margin-top:37px}
+ .service-grid{grid-template-columns:1fr}
+ .service{min-height:auto;padding:27px 24px 34px}
+ .service h3{margin-top:20px}
+ .folio{padding-bottom:74px}
+ .folio-grid{grid-template-columns:1fr;gap:15px}
+ .folio-main{height:280px}
+ .folio-side{height:240px}
+ .caption-flex{flex-direction:column;gap:4px}
+ .timeline-item{grid-template-columns:1fr;gap:12px;padding:23px 0 26px}
+ .time-date{padding-top:0}
+ .time-role h3{font-size:29px}
+ .result-item{grid-template-columns:40px 1fr;gap:12px;padding:28px 0}
+ .result-item p{grid-column:2}
+ .result-item h3{font-size:26px}
+ .results-heading{margin-bottom:30px}
+ .collab-grid{grid-template-columns:1fr}
+ .collab-item{min-height:0;padding:30px}
+ .collab-bottom{display:block}
+ .collab-bottom a{display:inline-block;margin-top:15px}
+ .contact{grid-template-columns:1fr}
+ .contact-visual{height:310px}
+ .contact-text{padding:55px 24px 60px}
+ .contact-text h2{font-size:48px}
+ .footer .container{display:block}
+ .footer a{display:inline-block;margin-top:10px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{animation:none}.button,.site-nav a,.social a{transition:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Перейти к содержанию</a>
+<header><div class="container header-inner">
+<a aria-label="На главную" class="logo" href="#top">Асия Акаева<span style="color:var(--accent)">.</span></a>
+<nav aria-label="Основная навигация" class="site-nav">
+<a href="#expertise">Экспертиза</a><a href="#experience">Опыт</a><a href="#results">Результаты</a><a href="#formats">Сотрудничество</a><a class="nav-contact" href="#contacts">Контакты  ↗</a>
+</nav>
+<details class="mobile-nav"><summary>Меню ☰</summary><div class="menu">
+<a href="#expertise">Экспертиза</a><a href="#experience">Опыт</a><a href="#results">Результаты</a><a href="#formats">Сотрудничество</a><a href="#contacts">Контакты</a>
+</div></details>
+</div></header>
+<main id="main">
+<section class="hero" id="top"><div class="container hero-grid">
+<div class="hero-left">
+<div class="eyebrow hero-number">Operations  ·  Legal  ·  Projects</div>
+<h1 class="hero-name">Асия<span class="second">Акаева</span></h1>
+<p class="hero-lead">Операционное управление, <i>право и проекты</i></p>
+<p class="hero-desc">Работаю с договорами, документооборотом, финансовыми и административными процессами, а также с координацией проектов и взаимодействием с клиентами</p>
+<div class="hero-actions"><a class="button dark" href="#contacts">Обсудить сотрудничество <span class="arr">↗</span></a>
+<a class="button textual" href="https://drive.google.com/file/d/1D8IREzZ1dZhKKRdRa3W8iM5JOOyimefz/view" rel="noopener" target="_blank">Смотреть CV <span class="arr">↗</span></a></div>
+</div>
+<div class="hero-right">
+<img alt="Портрет Асии Акаевой" class="hero-portrait" fetchpriority="high" src="assets/portrait.webp"/>
+<div class="hero-media-stamp"><span>Тбилиси</span>Удалённый формат работы</div>
+<div class="tiny-vertical">Личный сайт · 2026</div>
+</div>
+</div></section>
+<section class="intro" id="about"><div class="container intro-grid">
+<div class="section-index"><span>01</span> Обо мне</div>
+<div>
+<h2>Опыт на пересечении <em style="font-style:normal;color:var(--accent)">права и управления</em></h2>
+<p>Более 14 лет работаю в юридическом сопровождении, административной и операционной деятельности. Начинала с правовых и документальных задач, затем занималась организацией работы подразделений, финансовыми процессами и координацией проектов.</p>
+<p>В разных компаниях отвечала за договорную работу, документооборот, взаимодействие с подрядчиками и сотрудниками, а также за организационные вопросы, возникающие в ежедневной работе.</p>
+<div class="metrics">
+<div><div class="metric-num">14+</div><div class="metric-label">лет профессионального опыта</div></div>
+<div><div class="metric-num">99%</div><div class="metric-label">своевременных оплат · 2025</div></div>
+<div><div class="metric-num">91%</div><div class="metric-label">документооборота через ЭДО · 2025</div></div>
+<div><div class="metric-num">30+</div><div class="metric-label">контрагентов на регулярном сопровождении · 2025</div></div>
+</div>
+</div>
+</div></section>
+<section class="expertise" id="expertise"><div class="container">
+<div class="section-heading"><div class="section-index"><span>02</span> Экспертиза</div><h2>Основные направления<br/>работы</h2></div>
+<div class="service-grid">
+<article class="service"><div class="service-no">01 / LEGAL</div><h3>Право и договоры</h3><p>Анализ договоров и нормативных актов, оценка рисков, подготовка соглашений, претензий и правовых позиций. Переговоры в сложных договорных ситуациях.</p></article>
+<article class="service"><div class="service-no">02 / OPERATIONS</div><h3>Операционное управление</h3><p>Организация документооборота, кадровых и административных процессов, управление исполнителями, выстраивание регламентов и систем учёта.</p></article>
+<article class="service"><div class="service-no">03 / FINANCE OPERATIONS</div><h3>Финансовое сопровождение</h3><p>Контроль оплат и задолженности, закрывающие документы, расчёты с командой и подрядчиками, взаимодействие с бухгалтерией.</p></article>
+<article class="service"><div class="service-no">04 / PROJECT MANAGEMENT</div><h3>Проекты и клиенты</h3><p>Планирование ресурсов, координация команд, коммуникация с заказчиками, согласование объёма работ, сроков и дополнительных услуг.</p></article>
+</div>
+</div></section>
+<section aria-label="Визуальная галерея" class="folio"><div class="container">
+<div class="folio-grid">
+<img alt="Рабочий стол с документами, книгами и ноутбуком" class="folio-main" loading="lazy" src="assets/papers.webp"/>
+<img alt="Ноутбук, блокнот и чашка кофе в светлом рабочем пространстве" class="folio-side" loading="lazy" src="assets/laptop.webp"/>
+</div>
+<div class="caption-flex"><span>Работа с деталями и общая картина</span><span>Editorial / Objects &amp; Space</span></div>
+</div></section>
+<section class="experience" id="experience"><div class="container">
+<div class="section-heading"><div class="section-index"><span>03</span> Опыт</div><h2>Профессиональный<br/>путь</h2></div>
+<div class="timeline">
+<article class="timeline-item">
+<div class="time-date">2021 — настоящее время</div>
+<div class="time-role"><h3><a href="https://loo.ch" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:underline;text-decoration-color:currentColor;text-decoration-thickness:1px;text-underline-offset:4px">Студия «Луч»</a></h3><p>От документооборота к юридическим, операционным и проектным задачам</p></div>
+<div class="time-body"><p>Выстроила процессы учёта документов, сопровождала кадровое оформление, финансовые расчёты, договорную работу и взаимодействие с бухгалтерией. Затем взяла на себя проектный менеджмент: ресурсы, исполнителей, переговоры с клиентами и развитие действующих проектов.</p>
+<p><strong>Результаты:</strong> внедрение ЭДО и автоматизации, стабильное сопровождение оплат, разрешение трудового спора, возврат длительной задолженности; принятие новых функций в период реорганизации студии.</p></div>
+</article>
+<article class="timeline-item">
+<div class="time-date">2019 — 2021</div>
+<div class="time-role"><h3><a href="https://mways.ru" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:underline;text-decoration-color:currentColor;text-decoration-thickness:1px;text-underline-offset:4px">Multiways Business Group</a></h3><p>Офис-менеджер → административный директор</p></div>
+<div class="time-body"><p>Координировала команду из четырёх сотрудников, организацию офиса, взаимодействие с бухгалтерией, подготовку документов и своевременную оплату счетов. Сопровождала офисные переезды, мероприятия и работу с подрядчиками.</p><p><strong>Результат:</strong> карьерный рост от исполнительской позиции до руководства административным направлением.</p></div>
+</article>
+<article class="timeline-item">
+<div class="time-date">2015 — 2019</div>
+<div class="time-role"><h3><a href="https://эиос.даггау.рф" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:underline;text-decoration-color:currentColor;text-decoration-thickness:1px;text-underline-offset:4px">Дагестанский государственный аграрный университет</a></h3><p>Главный специалист → заместитель начальника отдела правового обеспечения</p></div>
+<div class="time-body"><p>Договорная работа, правовая экспертиза, локальные нормативные акты, переговоры, претензии и судебные материалы; организация договорного учёта и контроля исполнения обязательств.</p><p><strong>Результат:</strong> рост до заместителя руководителя юридического подразделения.</p></div>
+</article>
+<article class="timeline-item">
+<div class="time-date">2012 — 2015</div>
+<div class="time-role"><h3><a href="https://sktu.fish.gov.ru/about/" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:underline;text-decoration-color:currentColor;text-decoration-thickness:1px;text-underline-offset:4px">ЗКТУ Росрыболовства</a></h3><p>Административная и юридическая работа</p></div>
+<div class="time-body"><p>Административное сопровождение руководства, договоры, правовая переписка, процессуальные документы, взаимодействие с государственными органами и анализ материалов проверок.</p></div>
+</article>
+</div>
+</div></section>
+<section class="results" id="results"><div class="container">
+<div class="results-heading"><div class="section-index"><span>04</span> Результаты</div><h2>Примеры<br/>реализованных задач</h2></div>
+<div class="results-list">
+<article class="result-item"><span>01</span><h3>Возврат задолженности</h3><p>Добилась оплаты по проекту, счета по которому оставались неоплаченными около полутора лет.</p></article>
+<article class="result-item"><span>02</span><h3>Защита интересов компании</h3><p>Участвовала в сложном трудовом споре, завершившемся победой компании в суде.</p></article>
+<article class="result-item"><span>03</span><h3>Оптимизация и автоматизация</h3><p>Организовала электронный документооборот, автоматизировала рассылку расчётных листков и напоминаний, систематизировала учёт кадровых данных.</p></article>
+<article class="result-item"><span>04</span><h3>Управление в условиях изменений</h3><p>Во время организационного кризиса студии участвовала в сопровождении сокращений и приняла новые проектные и клиентские процессы без отдельного онбординга.</p></article>
+</div>
+<p class="results-note">Часть результатов представлена в обезличенном виде с учётом конфиденциальности клиентов и работодателей.</p>
+</div></section>
+<section class="collab" id="formats"><div class="container">
+<div class="section-heading"><div class="section-index"><span>05</span> Сотрудничество</div><h2>Форматы<br/>сотрудничества</h2></div>
+<div class="collab-grid">
+<article class="collab-item"><div class="num">01 / IN-HOUSE</div><h3>Работа в компании</h3><p>Операционные, юридические и межфункциональные роли с ответственностью за процессы, организацию работы и результат.</p></article>
+<article class="collab-item"><div class="num">02 / PROJECT-BASED</div><h3>Проектное сотрудничество</h3><p>Анализ договоров, консультации, внутренние документы, сопровождение переговоров и настройка отдельных бизнес-процессов.</p></article>
+</div>
+<div class="collab-bottom"><span>ИП в России и Грузии · Дистанционное сотрудничество</span><a href="https://drive.google.com/file/d/1D8IREzZ1dZhKKRdRa3W8iM5JOOyimefz/view" rel="noopener" target="_blank">Открыть полное CV ↗</a></div>
+</div></section>
+<section aria-label="Контакты" class="contact" id="contacts">
+<div class="contact-visual"><img alt="Рабочее место с ноутбуком, кофе и блокнотом" loading="lazy" src="assets/laptop.webp"/></div>
+<div class="contact-text">
+<div class="eyebrow">06 / КОНТАКТЫ</div>
+<h2>Будем <em style="color:var(--accent);font-style:normal">на связи</em></h2>
+<p>Открыта к предложениям о работе и проектному сотрудничеству. Можно связаться со мной удобным способом, чтобы обсудить задачи и формат взаимодействия</p>
+<div class="social">
+<a href="https://t.me/akaevasiya" rel="noopener" target="_blank">Telegram ↗</a>
+<a href="https://wa.me/79898610090" rel="noopener" target="_blank">WhatsApp ↗</a>
+<a href="mailto:akaevasiya@gmail.com">Email ↗</a>
+<a href="tel:+995599995620">+995 599 995 620</a>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer"><div class="container">
+<p>© 2026 Асия Акаева · Тбилиси, Грузия</p><a href="#top">Наверх ↑</a>
+</div></footer>
+</body>
+</html>
